@@ -51,7 +51,7 @@ services:
     build: ./fluentd
     volumes:
       - ./fluentd/conf:/fluentd/etc
-      - ./fluentd/data:/var/log
+      - /mnt/d/WS02Deployment/WS02/WSO2/wso2am-3.2.0/wso2am-3.2.0/repository/logs:/var/log
     ports:
       - "24225:24224"
       - "24225:24224/udp"
